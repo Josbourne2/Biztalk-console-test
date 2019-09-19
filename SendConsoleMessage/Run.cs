@@ -17,7 +17,8 @@ namespace SendConsoleMessage
         {
             Console.Title = "Stuur een bericht via BizTalk";
             Console.WriteLine("Typ wat in: ");
-            string filename = ConfigurationManager.AppSettings["XmlFileLocation"];
+            string inFoldername = ConfigurationManager.AppSettings["InFolderName"];
+            string filename = Path.Combine(inFoldername,String.Concat("XmlFile_", DateTime.Now.ToString("yyyyMMdd_HHmmss"),".xml"));
 
             string input;
             input = Console.ReadLine();
@@ -63,7 +64,7 @@ namespace SendConsoleMessage
 
             rootNode.AppendChild(contentNode);           
 
-            xmlDoc.Save("test-doc.xml");
+            xmlDoc.Save(filename);
         }
 
 
