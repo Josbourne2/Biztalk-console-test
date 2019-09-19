@@ -18,20 +18,22 @@ namespace SendConsoleMessage
             Console.Title = "Stuur een bericht via BizTalk";
             Console.WriteLine("Typ wat in: ");
             string inFoldername = ConfigurationManager.AppSettings["InFolderName"];
-            string filename = Path.Combine(inFoldername,String.Concat("XmlFile_", DateTime.Now.ToString("yyyyMMdd_HHmmss"),".xml"));
+            
 
             string input;
             input = Console.ReadLine();
 
-            if (!String.IsNullOrEmpty(input))
+            while (!String.IsNullOrEmpty(input))
             {
+                string filename = Path.Combine(inFoldername, String.Concat("XmlFile_", DateTime.Now.ToString("yyyyMMdd_HHmmss"), ".xml"));
+
                 MessageBuilder mb = new MessageBuilder();
                 mb.setMessage(input);
                 Message msg = mb.getMessage();
                 //SerializeObject(fileName, msg);
                 BuildXml(filename, msg);
                 Console.WriteLine(msg.getMessage());
-                Console.ReadLine();
+                input = Console.ReadLine();
             }
         }
 

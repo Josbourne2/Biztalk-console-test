@@ -240,3 +240,13 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+/Test/In/XmlFile_20190919_131031.xml
+/Test/In/XmlFile_20190919_131027.xml
+/Test/In/XmlFile_20190919_131025.xml
+/Test/In/XmlFile_20190919_131022.xml
+/Test/In/XmlFile_20190919_131021.xml
+/Test/In/XmlFile_20190919_130928.xml
+/Test/In/XmlFile_20190919_130911.xml
+/Test/In/XmlFile_20190919_130854.xml
+/Test/In/XmlFile_20190919_130828.xml
