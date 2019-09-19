@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveConsoleMessage", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.RouteMessage", "BT.RouteMessage\BT.RouteMessage.btproj", "{D2BBDD80-C673-471B-B9C8-DCC9EE166450}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{53395DDF-B16C-49C3-9F8A-6DF798922E25}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
