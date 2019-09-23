@@ -95,6 +95,16 @@
     </Map>
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="ReceivingService\ReceivingService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>BT.RouteMessage</Namespace>
+      <TypeName>ReceivingService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="ReceivingService\ReceivingService_tempuri_org.xsd">
+      <Namespace>BT.RouteMessage</Namespace>
+      <TypeName>ReceivingService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="SendConsoleMessage.snk" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +113,16 @@
       <Namespace>BT.RouteMessage</Namespace>
       <SubType>Task</SubType>
     </XLang>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ReceivingService\ReceivingService.BindingInfo.xml" />
+    <XLang Include="ReceivingService\ReceivingService.odx">
+      <TypeName>ReceivingService</TypeName>
+      <Namespace>BT.RouteMessage.ReceivingService</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="ReceivingService\ReceivingService_Custom.BindingInfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

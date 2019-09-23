@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e5f1a6fe-fdb8-4f06-9942-a61ab1eb92d2">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BT.RouteMessage" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="47c4fe98-a5f3-41dd-afce-899d5bf3dcf2" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IReceivingService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IReceivingService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="7cab383f-266c-413b-93a8-23a4980692f5" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;Addition&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="Addition" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="e168c4b0-84d4-4338-b79e-c1f12971aa17" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BT.RouteMessage.IReceivingService_Addition_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IReceivingService_Addition_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IReceivingService/Addition&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="300480d7-c1b9-458a-a531-4ec0b309a4ae" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BT.RouteMessage.IReceivingService_Addition_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IReceivingService_Addition_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IReceivingService/AdditionResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="f182d31e-06ca-4664-b0d8-3a0bf531749b" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;ReceiveMessage&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="ReceiveMessage" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="c5bb1ed4-381e-4d95-acd1-77b2990f7681" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="BT.RouteMessage.IReceivingService_ReceiveMessage_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IReceivingService_ReceiveMessage_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IReceivingService/ReceiveMessage&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="3154d881-f625-4c1f-a909-15b3cabfe851" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="BT.RouteMessage.IReceivingService_ReceiveMessage_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IReceivingService_ReceiveMessage_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IReceivingService/ReceiveMessageResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="615077e3-5226-4a82-b2e7-40bbc03315b7" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IReceivingService_Addition_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IReceivingService_Addition_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="47e03e5f-73a4-4323-9fa6-7e1578312d43" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BT.RouteMessage.ReceivingService_tempuri_org.Addition" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="b4da9cbd-61de-44f0-9013-aa874b3277d0" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IReceivingService_Addition_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IReceivingService_Addition_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="b1f3b0db-e43d-4ed8-93ac-330721dc566f" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BT.RouteMessage.ReceivingService_tempuri_org.AdditionResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="71250423-29f4-48cc-a659-33d8a46e5be4" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IReceivingService_ReceiveMessage_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IReceivingService_ReceiveMessage_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="58dae32f-53dd-4aea-ba81-b83b8b5bd60f" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BT.RouteMessage.ReceivingService_tempuri_org.ReceiveMessage" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="eab9a833-037b-43f4-824d-71f0be24bb96" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IReceivingService_ReceiveMessage_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IReceivingService_ReceiveMessage_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="c46185bd-b3ad-4fbe-9a39-e64048a5daa4" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="BT.RouteMessage.ReceivingService_tempuri_org.ReceiveMessageResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="e453e7f2-9b5a-4275-aa73-4fb0334dab8d" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;ReceivingService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="ReceivingServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="dcbaab13-955f-4b69-b560-8089e997e04f" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BT.RouteMessage
+{
+    internal messagetype IReceivingService_Addition_InputMessage
+    {
+        body ReceivingService_tempuri_org.Addition parameters;
+    };
+    internal messagetype IReceivingService_Addition_OutputMessage
+    {
+        body ReceivingService_tempuri_org.AdditionResponse parameters;
+    };
+    internal messagetype IReceivingService_ReceiveMessage_InputMessage
+    {
+        body ReceivingService_tempuri_org.ReceiveMessage parameters;
+    };
+    internal messagetype IReceivingService_ReceiveMessage_OutputMessage
+    {
+        body ReceivingService_tempuri_org.ReceiveMessageResponse parameters;
+    };
+    internal porttype IReceivingService
+    {
+        requestresponse Addition
+        {
+            IReceivingService_Addition_InputMessage, IReceivingService_Addition_OutputMessage
+        };
+        requestresponse ReceiveMessage
+        {
+            IReceivingService_ReceiveMessage_InputMessage, IReceivingService_ReceiveMessage_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ReceivingServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

@@ -11,15 +11,14 @@ namespace ReceiveConsoleMessage
     {
         static void Main(string[] args)
         {
-            //Console.Title = "Receiving BizTalk messages";
-            //Console.WriteLine("Ik wacht op uw bericht...");
+            Console.Title = "Receiving BizTalk messages";            
 
             ServiceHost host = new ServiceHost(typeof(ReceivingService));
             host.Open();
-            Console.WriteLine("Service Hosted Sucessfully");
+            Console.WriteLine("Service Hosted Successfully");
+            Console.WriteLine("Ik wacht op uw bericht...");
             Console.Read();
-
-            //Console.ReadKey();
+            
         }
     }
 }

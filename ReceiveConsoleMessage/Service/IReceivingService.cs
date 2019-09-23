@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Xml;
 
 namespace ReceiveConsoleMessage
 {
@@ -13,5 +14,8 @@ namespace ReceiveConsoleMessage
     {
         [OperationContract]
         int Addition(int num1, int num2);
+
+        [OperationContract]
+        void ReceiveMessage(String Response);
     }
 }
